@@ -1,0 +1,11 @@
+{
+  "name": "fun-with-webpack",
+  "version": "1.0.0",
+  "description": "Does what it says on the tin!",
+  "main": "index.js",
+  "author": "Me",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^3.0.0"
+  }
+}
