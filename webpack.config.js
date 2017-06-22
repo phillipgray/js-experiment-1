@@ -1,4 +1,5 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
 var path = require('path');
 
 module.exports = {
@@ -9,7 +10,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
-    })
+      template: './src/index.html',
+      inlineSource: '.js'
+    }),
+    new HtmlWebpackInlineSourcePlugin()
   ]
 };
